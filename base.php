@@ -32,3 +32,5 @@
     $eng[] = "e";
     $eng[] = "ing";
     $eng[] = "y";
+    $eng[] = "s";
+    $eng[] = "es";
