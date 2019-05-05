@@ -1,0 +1,53 @@
+* {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-form {
+    width: 50%;
+    margin: 120px auto 0 auto;
+}
+
+.main-form label {
+    display: block;
+    margin: 20px auto;
+    border: 1px dashed black;
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    line-height: 40px;
+}
+
+.main-form input {
+    display: block;
+    
+}
+
+.main-form input[type=submit] {
+    margin: 0 auto;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    
+}
+
+.answer {
+    width: fit-content;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+.answer mark {
+    background-color: rgb(9, 108, 173);
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.preloader {
+    margin: 100px auto;
+}
