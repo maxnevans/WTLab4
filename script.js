@@ -3,11 +3,17 @@
     const FORM_ID = "sf";
     const ANSWER_ID = "answer";
     const SEND_TO_URL = "function.php";
+    const PRELOADER = document.createElement("div");
+    PRELOADER.classList.add("preloader");
+    PRELOADER.hidden = true;
+    document.body.appendChild(PRELOADER);
 
     const searchForm = document.getElementById(FORM_ID);
     searchForm.addEventListener("submit", event => event.preventDefault());
     searchForm.addEventListener("submit", (event) => 
     {
+        PRELOADER.hidden = false;
+        answerField.hidden = true;
         sendForm(searchForm, SEND_TO_URL, (now, total) =>
         {
             console.log(now, total, total - now);
@@ -15,6 +21,8 @@
         .then((response) =>
         {
             answerField.innerHTML = response;
+            PRELOADER.hidden = true;
+            answerField.hidden = false;
         })
         .catch(console.error);
     });

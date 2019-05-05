@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="preloader.css">
 </head>
 <body>
-    <div class="preloader"></div>
     <form action="function.php" method="POST" enctype="multipart/form-data" name="search-form" id="sf">
         <input type="text" class="search-query" name="search">
         <input type="file" name="file" class="file-uploader">
