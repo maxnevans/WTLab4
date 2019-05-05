@@ -8,7 +8,7 @@ if (empty($_POST['search']))
     die("Search field is required!");
 $search_user = $_POST['search'];
 if ($_FILES['file']['error'] != UPLOAD_ERROR_OK)
-    die("File upload failed! Probably file is not selected...");
+    die("File upload failed! Probably file is not selected... Code: {".$_FILES['file']['error']."}");
 $content = file_get_contents($_FILES['file']['tmp_name']);
 
 $preresult = explode("\"", $search_user);
